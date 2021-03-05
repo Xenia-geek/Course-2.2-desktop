@@ -1,0 +1,142 @@
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\курсач 7 мая.exe.config
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\курсач 7 мая.exe
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\курсач 7 мая.pdb
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\App.g.cs
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая_MarkupCompile.cache
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая_MarkupCompile.lref
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.g.resources
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач_7_мая.Properties.Resources.resources
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.csproj.GenerateResource.cache
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.csproj.CoreCompileInputs.cache
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.exe
+C:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.pdb
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\allserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\myserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\input.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\registration.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\allserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\myserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\input.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\registration.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\EntityFramework.dll
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\EntityFramework.xml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\bin\Debug\ru\EntityFramework.resources.dll
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.csproj.CopyComplete
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDallserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDallserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDmyserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDmyserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDsessoneallserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDsessoneallserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\AllUsers.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\AllUsers.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDactorsserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDdirectorserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDgenreserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDactorsserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDdirectorserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDgenreserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDseriesallserials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\secondary pages\ADDseriesallserials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\ACTORS.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\third pages\ADDactors.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\ACTORS.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\third pages\ADDactors.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\DIRECTORS.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\main pages\DIRECTORS.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\third pages\AddDirectors.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\third pages\AddDirectors.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\fourth pages\ChangeSerials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\fourth pages\ChangeSerials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\fourth pages\ChangeMySerials.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\fourth pages\ChangeMySerials.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\testtslist.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\testtslist.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\курсач 7 мая.csprojAssemblyReference.cache
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\ADDAnswer.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\ADDQuestion.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\ADDTest.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\ADDAnswer.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\ADDQuestion.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\ADDTest.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\TestsForUsers.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\TestsForUsers.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\Results.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\Tests\Results.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\offers\ADDOffers.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\offers\offersANDcomplaints.g.cs
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\offers\ADDOffers.baml
+c:\Users\ksyus_000\source\repos\курсач 7 мая\курсач 7 мая\obj\Debug\offers\offersANDcomplaints.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\курсач 7 мая.exe.config
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\курсач 7 мая.exe
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\курсач 7 мая.pdb
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\EntityFramework.dll
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\EntityFramework.SqlServer.dll
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\EntityFramework.xml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\EntityFramework.SqlServer.xml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\bin\Debug\ru\EntityFramework.resources.dll
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.csprojAssemblyReference.cache
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\fourth pages\ChangeMySerials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\fourth pages\ChangeSerials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\ACTORS.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\allserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\AllUsers.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\DIRECTORS.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\myserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\input.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\registration.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\offers\ADDOffers.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\offers\offersANDcomplaints.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDactorsserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDallserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDdirectorserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDgenreserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDmyserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDseriesallserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDsessoneallserials.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\ADDAnswer.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\ADDQuestion.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\ADDTest.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\Results.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\TestsForUsers.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\testtslist.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\third pages\ADDactors.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\third pages\AddDirectors.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\App.g.cs
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая_MarkupCompile.cache
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая_MarkupCompile.lref
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\fourth pages\ChangeMySerials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\fourth pages\ChangeSerials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\ACTORS.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\allserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\AllUsers.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\DIRECTORS.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\myserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\input.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\main pages\registration.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\offers\ADDOffers.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\offers\offersANDcomplaints.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDactorsserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDallserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDdirectorserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDgenreserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDmyserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDseriesallserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\secondary pages\ADDsessoneallserials.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\ADDAnswer.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\ADDQuestion.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\ADDTest.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\Results.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\TestsForUsers.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\Tests\testtslist.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\third pages\ADDactors.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\third pages\AddDirectors.baml
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.g.resources
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач_7_мая.Properties.Resources.resources
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.csproj.GenerateResource.cache
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.csproj.CoreCompileInputs.cache
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.csproj.CopyComplete
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.exe
+k:\ToGit\курсач 2.2 web\курсач 7 мая\obj\Debug\курсач 7 мая.pdb
