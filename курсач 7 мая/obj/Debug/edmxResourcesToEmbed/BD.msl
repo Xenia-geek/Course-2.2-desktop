@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SERIALSModelContainer" CdmEntityContainer="SERIALSEntities">
+    <EntitySetMapping Name="Actor">
+      <EntityTypeMapping TypeName="SERIALSModel.Actor">
+        <MappingFragment StoreEntitySet="Actor">
+          <ScalarProperty Name="ID_Actor" ColumnName="ID_Actor" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Date_of_Birth" ColumnName="Date_of_Birth" />
+          <ScalarProperty Name="Biography" ColumnName="Biography" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACTORS">
+      <EntityTypeMapping TypeName="SERIALSModel.ACTORS">
+        <MappingFragment StoreEntitySet="ACTORS">
+          <ScalarProperty Name="ID_Serials" ColumnName="ID_Serials" />
+          <ScalarProperty Name="ID_Actor" ColumnName="ID_Actor" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Answer">
+      <EntityTypeMapping TypeName="SERIALSModel.Answer">
+        <MappingFragment StoreEntitySet="Answer">
+          <ScalarProperty Name="ID_Answer" ColumnName="ID_Answer" />
+          <ScalarProperty Name="ID_Question" ColumnName="ID_Question" />
+          <ScalarProperty Name="Answer1" ColumnName="Answer" />
+          <ScalarProperty Name="IS_Right" ColumnName="IS_Right" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Director">
+      <EntityTypeMapping TypeName="SERIALSModel.Director">
+        <MappingFragment StoreEntitySet="Director">
+          <ScalarProperty Name="ID_Director" ColumnName="ID_Director" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Date_of_Birth" ColumnName="Date_of_Birth" />
+          <ScalarProperty Name="Biography" ColumnName="Biography" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIRECTORS">
+      <EntityTypeMapping TypeName="SERIALSModel.DIRECTORS">
+        <MappingFragment StoreEntitySet="DIRECTORS">
+          <ScalarProperty Name="ID_Serials" ColumnName="ID_Serials" />
+          <ScalarProperty Name="ID_Director" ColumnName="ID_Director" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genre">
+      <EntityTypeMapping TypeName="SERIALSModel.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="ID_Genre" ColumnName="ID_Genre" />
+          <ScalarProperty Name="ID_Serials" ColumnName="ID_Serials" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Progress">
+      <EntityTypeMapping TypeName="SERIALSModel.Progress">
+        <MappingFragment StoreEntitySet="Progress">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="ID_Test" ColumnName="ID_Test" />
+          <ScalarProperty Name="Data_of_Test" ColumnName="Data_of_Test" />
+          <ScalarProperty Name="IS_Right" ColumnName="IS_Right" />
+          <ScalarProperty Name="Count_of_Right_Answer" ColumnName="Count_of_Right_Answer" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="SERIALSModel.Questions">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="ID_Questions" ColumnName="ID_Questions" />
+          <ScalarProperty Name="ID_Test" ColumnName="ID_Test" />
+          <ScalarProperty Name="Number_of_Question" ColumnName="Number_of_Question" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seasone">
+      <EntityTypeMapping TypeName="SERIALSModel.Seasone">
+        <MappingFragment StoreEntitySet="Seasone">
+          <ScalarProperty Name="ID_Seasone" ColumnName="ID_Seasone" />
+          <ScalarProperty Name="ID_Serials" ColumnName="ID_Serials" />
+          <ScalarProperty Name="Number_seasone" ColumnName="Number_seasone" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="About_seasone" ColumnName="About_seasone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERIALS">
+      <EntityTypeMapping TypeName="SERIALSModel.SERIALS">
+        <MappingFragment StoreEntitySet="SERIALS">
+          <ScalarProperty Name="ID_Serials" ColumnName="ID_Serials" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Year_of_Start" ColumnName="Year_of_Start" />
+          <ScalarProperty Name="Year_of_End" ColumnName="Year_of_End" />
+          <ScalarProperty Name="About_serials" ColumnName="About_serials" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Serials_for_Users">
+      <EntityTypeMapping TypeName="SERIALSModel.Serials_for_Users">
+        <MappingFragment StoreEntitySet="Serials_for_Users">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="ID_Serials" ColumnName="ID_Serials" />
+          <ScalarProperty Name="Seasone_of_User" ColumnName="Seasone_of_User" />
+          <ScalarProperty Name="Series_of_User" ColumnName="Series_of_User" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Series">
+      <EntityTypeMapping TypeName="SERIALSModel.Series">
+        <MappingFragment StoreEntitySet="Series">
+          <ScalarProperty Name="ID_Series" ColumnName="ID_Series" />
+          <ScalarProperty Name="ID_Seasone" ColumnName="ID_Seasone" />
+          <ScalarProperty Name="Number_Series" ColumnName="Number_Series" />
+          <ScalarProperty Name="Name_Series" ColumnName="Name_Series" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="About_series" ColumnName="About_series" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SERIALSModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Team">
+      <EntityTypeMapping TypeName="SERIALSModel.Team">
+        <MappingFragment StoreEntitySet="Team">
+          <ScalarProperty Name="ID_Seasone" ColumnName="ID_Seasone" />
+          <ScalarProperty Name="ID_Team" ColumnName="ID_Team" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Test">
+      <EntityTypeMapping TypeName="SERIALSModel.Test">
+        <MappingFragment StoreEntitySet="Test">
+          <ScalarProperty Name="ID_Test" ColumnName="ID_Test" />
+          <ScalarProperty Name="ID_Team" ColumnName="ID_Team" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="SERIALSModel.USERS">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

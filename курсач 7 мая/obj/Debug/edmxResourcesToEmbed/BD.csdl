@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SERIALSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Actor">
+    <Key>
+      <PropertyRef Name="ID_Actor" />
+    </Key>
+    <Property Name="ID_Actor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Date_of_Birth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Biography" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ACTORS" Relationship="Self.Actor_ACTORS_FK" FromRole="Actor" ToRole="ACTORS" />
+  </EntityType>
+  <EntityType Name="ACTORS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_Serials" Type="Int32" />
+    <Property Name="ID_Actor" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Actor" Relationship="Self.Actor_ACTORS_FK" FromRole="ACTORS" ToRole="Actor" />
+    <NavigationProperty Name="SERIALS" Relationship="Self.Actors_SERIALS_FK" FromRole="ACTORS" ToRole="SERIALS" />
+  </EntityType>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="ID_Answer" />
+    </Key>
+    <Property Name="ID_Answer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Question" Type="Int32" />
+    <Property Name="Answer1" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IS_Right" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Questions" Relationship="Self.Question_for_Answer_FK" FromRole="Answer" ToRole="Questions" />
+  </EntityType>
+  <EntityType Name="Director">
+    <Key>
+      <PropertyRef Name="ID_Director" />
+    </Key>
+    <Property Name="ID_Director" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Date_of_Birth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Biography" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DIRECTORS" Relationship="Self.Director_DIRECTORS_FK" FromRole="Director" ToRole="DIRECTORS" />
+  </EntityType>
+  <EntityType Name="DIRECTORS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_Serials" Type="Int32" />
+    <Property Name="ID_Director" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Director" Relationship="Self.Director_DIRECTORS_FK" FromRole="DIRECTORS" ToRole="Director" />
+    <NavigationProperty Name="SERIALS" Relationship="Self.Directors_SERIALS_FK" FromRole="DIRECTORS" ToRole="SERIALS" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="ID_Genre" />
+    </Key>
+    <Property Name="ID_Genre" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Serials" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SERIALS" Relationship="Self.Genre_SERIALS_FK" FromRole="Genre" ToRole="SERIALS" />
+  </EntityType>
+  <EntityType Name="Progress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_User" Type="Int32" />
+    <Property Name="ID_Test" Type="Int32" />
+    <Property Name="Data_of_Test" Type="DateTime" Precision="0" />
+    <Property Name="IS_Right" Type="Boolean" Nullable="false" />
+    <Property Name="Count_of_Right_Answer" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Test" Relationship="Self.Test_for_Progress_FK" FromRole="Progress" ToRole="Test" />
+    <NavigationProperty Name="USERS" Relationship="Self.User_for_Progress_FK" FromRole="Progress" ToRole="USERS" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="ID_Questions" />
+    </Key>
+    <Property Name="ID_Questions" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Test" Type="Int32" />
+    <Property Name="Number_of_Question" Type="Int32" Nullable="false" />
+    <Property Name="Question" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Answer" Relationship="Self.Question_for_Answer_FK" FromRole="Questions" ToRole="Answer" />
+    <NavigationProperty Name="Test" Relationship="Self.Test_for_Question_FK" FromRole="Questions" ToRole="Test" />
+  </EntityType>
+  <EntityType Name="Seasone">
+    <Key>
+      <PropertyRef Name="ID_Seasone" />
+    </Key>
+    <Property Name="ID_Seasone" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Serials" Type="Int32" />
+    <Property Name="Number_seasone" Type="Int32" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="About_seasone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Team" Relationship="Self.Seasone_for_Team_FK" FromRole="Seasone" ToRole="Team" />
+    <NavigationProperty Name="Serials_for_Users" Relationship="Self.Seasone_for_USER_SERIALS_FK" FromRole="Seasone" ToRole="Serials_for_Users" />
+    <NavigationProperty Name="SERIALS" Relationship="Self.SEASONE_SERIALS_FK" FromRole="Seasone" ToRole="SERIALS" />
+    <NavigationProperty Name="Series" Relationship="Self.SERIES_SEASONE_FK" FromRole="Seasone" ToRole="Series" />
+  </EntityType>
+  <EntityType Name="SERIALS">
+    <Key>
+      <PropertyRef Name="ID_Serials" />
+    </Key>
+    <Property Name="ID_Serials" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Year_of_Start" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Year_of_End" Type="DateTime" Precision="0" />
+    <Property Name="About_serials" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ACTORS" Relationship="Self.Actors_SERIALS_FK" FromRole="SERIALS" ToRole="ACTORS" />
+    <NavigationProperty Name="DIRECTORS" Relationship="Self.Directors_SERIALS_FK" FromRole="SERIALS" ToRole="DIRECTORS" />
+    <NavigationProperty Name="Genre" Relationship="Self.Genre_SERIALS_FK" FromRole="SERIALS" ToRole="Genre" />
+    <NavigationProperty Name="Seasone" Relationship="Self.SEASONE_SERIALS_FK" FromRole="SERIALS" ToRole="Seasone" />
+    <NavigationProperty Name="Serials_for_Users" Relationship="Self.Serials_for_USER_SERIALS_FK" FromRole="SERIALS" ToRole="Serials_for_Users" />
+  </EntityType>
+  <EntityType Name="Serials_for_Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_User" Type="Int32" />
+    <Property Name="ID_Serials" Type="Int32" />
+    <Property Name="Seasone_of_User" Type="Int32" />
+    <Property Name="Series_of_User" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Seasone" Relationship="Self.Seasone_for_USER_SERIALS_FK" FromRole="Serials_for_Users" ToRole="Seasone" />
+    <NavigationProperty Name="SERIALS" Relationship="Self.Serials_for_USER_SERIALS_FK" FromRole="Serials_for_Users" ToRole="SERIALS" />
+    <NavigationProperty Name="Series" Relationship="Self.Series_for_USER_SERIALS_FK" FromRole="Serials_for_Users" ToRole="Series" />
+    <NavigationProperty Name="USERS" Relationship="Self.User_for_USER_SERIALS_FK" FromRole="Serials_for_Users" ToRole="USERS" />
+  </EntityType>
+  <EntityType Name="Series">
+    <Key>
+      <PropertyRef Name="ID_Series" />
+    </Key>
+    <Property Name="ID_Series" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Seasone" Type="Int32" />
+    <Property Name="Number_Series" Type="Int32" Nullable="false" />
+    <Property Name="Name_Series" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="About_series" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Seasone" Relationship="Self.SERIES_SEASONE_FK" FromRole="Series" ToRole="Seasone" />
+    <NavigationProperty Name="Serials_for_Users" Relationship="Self.Series_for_USER_SERIALS_FK" FromRole="Series" ToRole="Serials_for_Users" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="ID_Team" />
+    </Key>
+    <Property Name="ID_Seasone" Type="Int32" />
+    <Property Name="ID_Team" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Seasone" Relationship="Self.Seasone_for_Team_FK" FromRole="Team" ToRole="Seasone" />
+    <NavigationProperty Name="Test" Relationship="Self.Test_for_Team_FK" FromRole="Team" ToRole="Test" />
+  </EntityType>
+  <EntityType Name="Test">
+    <Key>
+      <PropertyRef Name="ID_Test" />
+    </Key>
+    <Property Name="ID_Test" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Team" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Progress" Relationship="Self.Test_for_Progress_FK" FromRole="Test" ToRole="Progress" />
+    <NavigationProperty Name="Questions" Relationship="Self.Test_for_Question_FK" FromRole="Test" ToRole="Questions" />
+    <NavigationProperty Name="Team" Relationship="Self.Test_for_Team_FK" FromRole="Test" ToRole="Team" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="ID_User" />
+    </Key>
+    <Property Name="ID_User" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Progress" Relationship="Self.User_for_Progress_FK" FromRole="USERS" ToRole="Progress" />
+    <NavigationProperty Name="Serials_for_Users" Relationship="Self.User_for_USER_SERIALS_FK" FromRole="USERS" ToRole="Serials_for_Users" />
+  </EntityType>
+  <Association Name="Actor_ACTORS_FK">
+    <End Role="Actor" Type="Self.Actor" Multiplicity="0..1" />
+    <End Role="ACTORS" Type="Self.ACTORS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Actor">
+        <PropertyRef Name="ID_Actor" />
+      </Principal>
+      <Dependent Role="ACTORS">
+        <PropertyRef Name="ID_Actor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Actors_SERIALS_FK">
+    <End Role="SERIALS" Type="Self.SERIALS" Multiplicity="0..1" />
+    <End Role="ACTORS" Type="Self.ACTORS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERIALS">
+        <PropertyRef Name="ID_Serials" />
+      </Principal>
+      <Dependent Role="ACTORS">
+        <PropertyRef Name="ID_Serials" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Question_for_Answer_FK">
+    <End Role="Questions" Type="Self.Questions" Multiplicity="0..1" />
+    <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Questions">
+        <PropertyRef Name="ID_Questions" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="ID_Question" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Director_DIRECTORS_FK">
+    <End Role="Director" Type="Self.Director" Multiplicity="0..1" />
+    <End Role="DIRECTORS" Type="Self.DIRECTORS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Director">
+        <PropertyRef Name="ID_Director" />
+      </Principal>
+      <Dependent Role="DIRECTORS">
+        <PropertyRef Name="ID_Director" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Directors_SERIALS_FK">
+    <End Role="SERIALS" Type="Self.SERIALS" Multiplicity="0..1" />
+    <End Role="DIRECTORS" Type="Self.DIRECTORS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERIALS">
+        <PropertyRef Name="ID_Serials" />
+      </Principal>
+      <Dependent Role="DIRECTORS">
+        <PropertyRef Name="ID_Serials" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Genre_SERIALS_FK">
+    <End Role="SERIALS" Type="Self.SERIALS" Multiplicity="0..1" />
+    <End Role="Genre" Type="Self.Genre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERIALS">
+        <PropertyRef Name="ID_Serials" />
+      </Principal>
+      <Dependent Role="Genre">
+        <PropertyRef Name="ID_Serials" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Test_for_Progress_FK">
+    <End Role="Test" Type="Self.Test" Multiplicity="0..1" />
+    <End Role="Progress" Type="Self.Progress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Test">
+        <PropertyRef Name="ID_Test" />
+      </Principal>
+      <Dependent Role="Progress">
+        <PropertyRef Name="ID_Test" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="User_for_Progress_FK">
+    <End Role="USERS" Type="Self.USERS" Multiplicity="0..1" />
+    <End Role="Progress" Type="Self.Progress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Progress">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Test_for_Question_FK">
+    <End Role="Test" Type="Self.Test" Multiplicity="0..1" />
+    <End Role="Questions" Type="Self.Questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Test">
+        <PropertyRef Name="ID_Test" />
+      </Principal>
+      <Dependent Role="Questions">
+        <PropertyRef Name="ID_Test" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Seasone_for_Team_FK">
+    <End Role="Seasone" Type="Self.Seasone" Multiplicity="0..1" />
+    <End Role="Team" Type="Self.Team" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seasone">
+        <PropertyRef Name="ID_Seasone" />
+      </Principal>
+      <Dependent Role="Team">
+        <PropertyRef Name="ID_Seasone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Seasone_for_USER_SERIALS_FK">
+    <End Role="Seasone" Type="Self.Seasone" Multiplicity="0..1" />
+    <End Role="Serials_for_Users" Type="Self.Serials_for_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seasone">
+        <PropertyRef Name="ID_Seasone" />
+      </Principal>
+      <Dependent Role="Serials_for_Users">
+        <PropertyRef Name="Seasone_of_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SEASONE_SERIALS_FK">
+    <End Role="SERIALS" Type="Self.SERIALS" Multiplicity="0..1" />
+    <End Role="Seasone" Type="Self.Seasone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERIALS">
+        <PropertyRef Name="ID_Serials" />
+      </Principal>
+      <Dependent Role="Seasone">
+        <PropertyRef Name="ID_Serials" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SERIES_SEASONE_FK">
+    <End Role="Seasone" Type="Self.Seasone" Multiplicity="0..1" />
+    <End Role="Series" Type="Self.Series" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seasone">
+        <PropertyRef Name="ID_Seasone" />
+      </Principal>
+      <Dependent Role="Series">
+        <PropertyRef Name="ID_Seasone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Serials_for_USER_SERIALS_FK">
+    <End Role="SERIALS" Type="Self.SERIALS" Multiplicity="0..1" />
+    <End Role="Serials_for_Users" Type="Self.Serials_for_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERIALS">
+        <PropertyRef Name="ID_Serials" />
+      </Principal>
+      <Dependent Role="Serials_for_Users">
+        <PropertyRef Name="ID_Serials" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Series_for_USER_SERIALS_FK">
+    <End Role="Series" Type="Self.Series" Multiplicity="0..1" />
+    <End Role="Serials_for_Users" Type="Self.Serials_for_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Series">
+        <PropertyRef Name="ID_Series" />
+      </Principal>
+      <Dependent Role="Serials_for_Users">
+        <PropertyRef Name="Series_of_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="User_for_USER_SERIALS_FK">
+    <End Role="USERS" Type="Self.USERS" Multiplicity="0..1" />
+    <End Role="Serials_for_Users" Type="Self.Serials_for_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Serials_for_Users">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Test_for_Team_FK">
+    <End Role="Team" Type="Self.Team" Multiplicity="0..1" />
+    <End Role="Test" Type="Self.Test" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="ID_Team" />
+      </Principal>
+      <Dependent Role="Test">
+        <PropertyRef Name="ID_Team" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SERIALSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actor" EntityType="Self.Actor" />
+    <EntitySet Name="ACTORS" EntityType="Self.ACTORS" />
+    <EntitySet Name="Answer" EntityType="Self.Answer" />
+    <EntitySet Name="Director" EntityType="Self.Director" />
+    <EntitySet Name="DIRECTORS" EntityType="Self.DIRECTORS" />
+    <EntitySet Name="Genre" EntityType="Self.Genre" />
+    <EntitySet Name="Progress" EntityType="Self.Progress" />
+    <EntitySet Name="Questions" EntityType="Self.Questions" />
+    <EntitySet Name="Seasone" EntityType="Self.Seasone" />
+    <EntitySet Name="SERIALS" EntityType="Self.SERIALS" />
+    <EntitySet Name="Serials_for_Users" EntityType="Self.Serials_for_Users" />
+    <EntitySet Name="Series" EntityType="Self.Series" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Team" EntityType="Self.Team" />
+    <EntitySet Name="Test" EntityType="Self.Test" />
+    <EntitySet Name="USERS" EntityType="Self.USERS" />
+    <AssociationSet Name="Actor_ACTORS_FK" Association="Self.Actor_ACTORS_FK">
+      <End Role="Actor" EntitySet="Actor" />
+      <End Role="ACTORS" EntitySet="ACTORS" />
+    </AssociationSet>
+    <AssociationSet Name="Actors_SERIALS_FK" Association="Self.Actors_SERIALS_FK">
+      <End Role="SERIALS" EntitySet="SERIALS" />
+      <End Role="ACTORS" EntitySet="ACTORS" />
+    </AssociationSet>
+    <AssociationSet Name="Question_for_Answer_FK" Association="Self.Question_for_Answer_FK">
+      <End Role="Questions" EntitySet="Questions" />
+      <End Role="Answer" EntitySet="Answer" />
+    </AssociationSet>
+    <AssociationSet Name="Director_DIRECTORS_FK" Association="Self.Director_DIRECTORS_FK">
+      <End Role="Director" EntitySet="Director" />
+      <End Role="DIRECTORS" EntitySet="DIRECTORS" />
+    </AssociationSet>
+    <AssociationSet Name="Directors_SERIALS_FK" Association="Self.Directors_SERIALS_FK">
+      <End Role="SERIALS" EntitySet="SERIALS" />
+      <End Role="DIRECTORS" EntitySet="DIRECTORS" />
+    </AssociationSet>
+    <AssociationSet Name="Genre_SERIALS_FK" Association="Self.Genre_SERIALS_FK">
+      <End Role="SERIALS" EntitySet="SERIALS" />
+      <End Role="Genre" EntitySet="Genre" />
+    </AssociationSet>
+    <AssociationSet Name="Test_for_Progress_FK" Association="Self.Test_for_Progress_FK">
+      <End Role="Test" EntitySet="Test" />
+      <End Role="Progress" EntitySet="Progress" />
+    </AssociationSet>
+    <AssociationSet Name="User_for_Progress_FK" Association="Self.User_for_Progress_FK">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="Progress" EntitySet="Progress" />
+    </AssociationSet>
+    <AssociationSet Name="Test_for_Question_FK" Association="Self.Test_for_Question_FK">
+      <End Role="Test" EntitySet="Test" />
+      <End Role="Questions" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="Seasone_for_Team_FK" Association="Self.Seasone_for_Team_FK">
+      <End Role="Seasone" EntitySet="Seasone" />
+      <End Role="Team" EntitySet="Team" />
+    </AssociationSet>
+    <AssociationSet Name="Seasone_for_USER_SERIALS_FK" Association="Self.Seasone_for_USER_SERIALS_FK">
+      <End Role="Seasone" EntitySet="Seasone" />
+      <End Role="Serials_for_Users" EntitySet="Serials_for_Users" />
+    </AssociationSet>
+    <AssociationSet Name="SEASONE_SERIALS_FK" Association="Self.SEASONE_SERIALS_FK">
+      <End Role="SERIALS" EntitySet="SERIALS" />
+      <End Role="Seasone" EntitySet="Seasone" />
+    </AssociationSet>
+    <AssociationSet Name="SERIES_SEASONE_FK" Association="Self.SERIES_SEASONE_FK">
+      <End Role="Seasone" EntitySet="Seasone" />
+      <End Role="Series" EntitySet="Series" />
+    </AssociationSet>
+    <AssociationSet Name="Serials_for_USER_SERIALS_FK" Association="Self.Serials_for_USER_SERIALS_FK">
+      <End Role="SERIALS" EntitySet="SERIALS" />
+      <End Role="Serials_for_Users" EntitySet="Serials_for_Users" />
+    </AssociationSet>
+    <AssociationSet Name="Series_for_USER_SERIALS_FK" Association="Self.Series_for_USER_SERIALS_FK">
+      <End Role="Series" EntitySet="Series" />
+      <End Role="Serials_for_Users" EntitySet="Serials_for_Users" />
+    </AssociationSet>
+    <AssociationSet Name="User_for_USER_SERIALS_FK" Association="Self.User_for_USER_SERIALS_FK">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="Serials_for_Users" EntitySet="Serials_for_Users" />
+    </AssociationSet>
+    <AssociationSet Name="Test_for_Team_FK" Association="Self.Test_for_Team_FK">
+      <End Role="Team" EntitySet="Team" />
+      <End Role="Test" EntitySet="Test" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
