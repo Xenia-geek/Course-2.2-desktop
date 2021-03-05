@@ -1,2 +1,2 @@
-# Course-2.2-web
+# Course-2.2-desktop
 Optional
