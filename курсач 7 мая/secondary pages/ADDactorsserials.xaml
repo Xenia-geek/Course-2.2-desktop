@@ -1,0 +1,149 @@
+﻿<Window x:Class="курсач_7_мая.secondary_pages.ADDactorsserials"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсач_7_мая.secondary_pages"
+        mc:Ignorable="d"
+        Title="Serials for nerd" Height="600" Width="600" MinWidth="600" MinHeight="600" MaxHeight="600" MaxWidth="600"
+        Icon="c:\КСЮША\Универ\2 курс\курсач\иконка.ico"
+        
+    >
+    <Window.Resources>
+        <ControlTemplate x:Key="roundbutton" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="128*"/>
+            <ColumnDefinition Width="146*"/>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="174*"/>
+            <RowDefinition Height="136*"/>
+            <RowDefinition Height="64*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFFDF7FF" Offset="0.0"/>
+                <GradientStop Color="#FFC0CB" Offset="1.2"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu Grid.ColumnSpan="4"
+              Margin="0,0,4,74" 
+              FontSize="21" 
+              FontFamily="Caveat" 
+              Opacity="0.7"
+              Background="#FFFDABCD" 
+              Foreground="#FF5A1070" 
+              Grid.RowSpan="2">
+            <MenuItem x:Name="Serial" Header="Сериал" Width="81" IsEnabled="False"  />
+            <MenuItem x:Name="Seasone" Header="Сезон" Width="75" IsEnabled="False"  />
+            <MenuItem x:Name="Series" Header="Серия" Width="75" IsEnabled="False" />
+            <MenuItem x:Name="Genre" Header="Жанр" Width="75" IsEnabled="False" />
+            <MenuItem x:Name="Actors" Header="Актеры" Width="75" IsEnabled="False" Background="#FFF4DEFD"  BorderBrush="#FFF4DEFD"/>
+            <MenuItem x:Name="Director" Header="Режиссер" Width="75" IsEnabled="False" />
+        </Menu>
+
+        <Label Content="*" 
+               FontSize="35" 
+               FontFamily="Caveat" 
+               HorizontalAlignment="Right" 
+               Foreground="#FFF3150B" 
+               Opacity="0.7"
+               Margin="0,102,121,10" 
+               Width="64" Grid.Row="4" Grid.ColumnSpan="2" />
+        <Label Content="Добавление актера" 
+               FontSize="41"             
+               FontFamily="Caveat" 
+               HorizontalAlignment="Center" 
+               Foreground="#FFE04BB7" 
+               Opacity="0.7"
+               Margin="10,36,136,154" 
+               Width="318" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Grid.Row="2" />
+        <Label x:Name="SerialName"
+               FontSize="25"  
+               
+               HorizontalContentAlignment="Center"
+               FontFamily="Caveat" 
+               HorizontalAlignment="Center" 
+               Foreground="#FFE04BB7" 
+               Opacity="0.7"
+               Margin="89,10,81.246,100" 
+               Width="422" Grid.Row="4" Grid.ColumnSpan="4" />
+
+        <Label x:Name="Actor"
+               Content="Выберите ФИО"
+               FontSize="25"             
+               FontFamily="Caveat" 
+               HorizontalAlignment="Center" 
+               Foreground="#FFE04BB7" 
+               Opacity="0.7"
+               Margin="3,64,4,66" 
+               Width="321" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" />
+
+        <ComboBox x:Name="FIO"
+                  FontSize="25"             
+               FontFamily="Caveat" 
+               HorizontalAlignment="Center" 
+               Foreground="#FFE04BB7" 
+               Opacity="0.7" Grid.ColumnSpan="2" Margin="7,103,7,31" Width="314" Grid.Column="1" Grid.Row="4" SelectionChanged="FIO_SelectionChanged" PreviewMouseLeftButtonDown="FIO_PreviewMouseLeftButtonDown"/>
+
+        <Border x:Name="borderlogin"
+                Background="#FFE04BB7" 
+                Opacity="0.7" Margin="2,155,1,17" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+        <TextBox 
+            x:Name="ActorNOTcorrect" 
+            FontSize="35" 
+            FontFamily="Caveat"
+            Text="!"           
+            HorizontalAlignment="Center"             
+            Foreground="#FFF51111" 
+            Opacity="0" 
+            Grid.Row="4" 
+            Width="54" 
+            Grid.Column="3"   
+            BorderThickness="0" 
+            IsReadOnly="True" 
+            Margin="2,102,81,10"
+            Background="{x:Null}" TextChanged="ActorNOTcorrect_TextChanged" PreviewMouseLeftButtonDown="ActorNOTcorrect_PreviewMouseLeftButtonDown"  />
+
+        <Button Template="{StaticResource roundbutton}" 
+                x:Name="genre" 
+                Content="Еще" 
+                FontFamily="Caveat"
+                FontSize="22"
+                Background="#FFFDE5FB"
+                Foreground="#FF9739CD" 
+                Margin="26,34,23.5,0"
+                Grid.Row="5" 
+                RenderTransformOrigin="0.811,0.591" Grid.Column="1" Height="52" VerticalAlignment="Top" Click="Genre_Click"
+         />
+        <Button Template="{StaticResource roundbutton}" 
+                x:Name="continue" 
+                Content="Далее" 
+                FontFamily="Caveat"
+                FontSize="22"
+                Background="#FFFDE5FB"
+                Foreground="#FF9739CD" 
+                Margin="38.5,35,47,0"
+                Grid.Row="5" 
+                RenderTransformOrigin="0.811,0.591" Grid.Column="2" Height="52" VerticalAlignment="Top" Click="Continue_Click"
+         />
+
+    </Grid>
+
+</Window>
+

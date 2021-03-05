@@ -1,0 +1,159 @@
+﻿<Window x:Class="курсач_7_мая.Tests.Results"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсач_7_мая.Tests"
+        mc:Ignorable="d"
+        Title="Serials for nerd" Height="600" Width="1000" MinWidth="1000" MinHeight="600" MaxHeight="600" MaxWidth="600"
+        Icon="c:\КСЮША\Универ\2 курс\курсач\иконка.ico"
+        >
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FFFFA6B2"/>
+            <Setter Property="BorderBrush" Value="#FFFDE4E4"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Background" Value="#FFFFE1E1"/>
+            <Setter Property="FontFamily" Value="Caveat"/>
+            <Setter Property="Foreground" Value="#FF902AB6"/>
+        </Style>
+        <ControlTemplate x:Key="roundbutton" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFFDF7FF" Offset="0.0"/>
+                <GradientStop Color="#FFC0CB" Offset="1.2"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="204*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="126*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="24*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*" />
+            <RowDefinition Height="528*"/>
+        </Grid.RowDefinitions>
+        <Menu Margin="5,5,119,5" Background="#FFFDF7FF" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem x:Name="username" Height="120"  Background="#FFFFA6B2" Foreground="White" IsEnabled="False" />
+            <MenuItem x:Name="Myserials"   Header="Мои сериалы" Click="MySerials_Click" />
+            <MenuItem    Header="Список сериалов"  Click="AllSerials_Click"/>
+            <MenuItem    Header="Список актеров" Click="MenuItem_Click" />
+            <MenuItem x:Name="AllDirectors"   Header="Список режиссеров" Click="AllDirectors_Click" />
+
+            <MenuItem    Header="Тесты" Click="MenuItem_Click_1" >
+                </MenuItem>
+            <MenuItem Header="Результаты" Background="#FFFBCECE"/>
+
+
+        </Menu>
+        <TextBox x:Name="Search" Grid.Column="2" 
+                   Margin="23,0,1,4" 
+                   Background="#FFFDF8F8"
+                    Text="Поиск по названию..."
+                    FontSize="23"
+                    FontFamily="Caveat" 
+                   Foreground="#FFF14895" 
+                   Grid.ColumnSpan="2" 
+                   Height="33" 
+                   VerticalAlignment="Bottom" 
+                   PreviewMouseLeftButtonDown="Search_PreviewMouseLeftButtonDown" BorderBrush="#FFE43092" TextChanged="Search_TextChanged"
+                   />
+        <Button x:Name="SerAllSerials" Template="{StaticResource roundbutton}" 
+                Margin="7,0,0,3"  
+                FontSize="35" 
+                FontFamily="Caveat" 
+                Grid.Column="4" 
+                Opacity="0.8" 
+                Foreground="#FFD4257D" 
+                Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="39" Height="36" VerticalAlignment="Bottom" Click="SerAllSerials_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="c:\КСЮША\Универ\2 курс\курсач\ser.jpg" Stretch="UniformToFill" />
+            </Button.Background>
+        </Button>
+
+
+        <DataGrid x:Name="AllSerials" 
+                  FontSize="14" 
+                  FontWeight="Bold" 
+                  Margin="21,1,4,-1" 
+                  AutoGenerateColumns="True"  
+                  BorderBrush="White" 
+                  Grid.Column="2" 
+                  RowHeight="60"
+                  HorizontalContentAlignment="Center"
+                  MinColumnWidth="140"
+                  MaxColumnWidth="175"
+                  Foreground="#FF8233B9" 
+                  Grid.ColumnSpan="13"  
+                  IsReadOnly="True" Grid.Row="1" SelectionChanged="AllSerials_SelectionChanged_1" >
+            <DataGrid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FFFDF7FF" Offset="0.0"/>
+                    <GradientStop Color="#FFC0CB" Offset="1.2"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+
+
+        </DataGrid>
+
+        <Button Height="45" VerticalAlignment="Bottom" Margin="6,0,121,5" Content="Выход" FontSize="24" FontFamily="Caveat" Click="Button_Click" Grid.Row="1" Grid.ColumnSpan="3" />
+
+
+
+
+
+        <Button x:Name="ReloadAllSerials" Template="{StaticResource roundbutton}" 
+                Height="34" 
+                Margin="8,0,0,5"  
+                FontSize="35" 
+                FontFamily="Caveat" 
+                Grid.Column="13" 
+                Opacity="0.8"
+                VerticalAlignment="Bottom" 
+                Foreground="#FFD4257D" 
+               
+                HorizontalAlignment="Left" Width="36" Grid.ColumnSpan="2" Click="ReloadAllSerials_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="c:\КСЮША\Универ\2 курс\курсач\relod.jpg" Stretch="UniformToFill" />
+            </Button.Background>
+        </Button>
+
+
+
+
+
+
+
+
+    </Grid>
+
+</Window>
